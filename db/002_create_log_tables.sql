@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS log_resp (
     request_id       BIGINT REFERENCES log_req (id),
     log_level        VARCHAR(20)  NOT NULL,   -- INFO / ERROR
     category         VARCHAR(40),             -- error classification, null on success
-    source           VARCHAR(200) NOT NULL,   -- e.g. "PrototypeBusinessLogic.CreateAsync"
+    source           VARCHAR(200) NOT NULL,   -- e.g. "TestKubeBusinessLogic.CreateAsync"
     message          TEXT,
     exception_detail TEXT,                    -- ex.ToString(), null on success
     created_at       TIMESTAMPTZ  NOT NULL DEFAULT now()

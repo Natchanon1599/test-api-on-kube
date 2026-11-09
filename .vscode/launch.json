@@ -2,13 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": ".NET Core Launch (PrototypeApi)",
+      "name": ".NET Core Launch (TestKubeApi)",
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/src/PrototypeApi/bin/Debug/net10.0/PrototypeApi.dll",
+      "program": "${workspaceFolder}/src/TestKubeApi/bin/Debug/net10.0/TestKubeApi.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/src/PrototypeApi",
+      "cwd": "${workspaceFolder}/src/TestKubeApi",
       "stopAtEntry": false,
       "env": {
         "ASPNETCORE_ENVIRONMENT": "Development"
